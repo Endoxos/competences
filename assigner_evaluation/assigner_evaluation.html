@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REFERENTIEL</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="div_gris">
+    <div class="div_dropdown">
+      <div class="div_bloc">
+        <div class="dropdown_bloc">
+          <input class="text_bloc" type="text" placeholder="Choisir une évaluation.." readonly>
+          <div class="options" id="options_bloc">
+          </div>
+        </div>
+      </div>
+      <div class="div_domaine">
+        <div class="dropdown_domaine">
+          <input class="text_domaine" type="text" placeholder="Choisir un collaborateur.." readonly>
+          <div class="options" id="options_domaine">
+          </div>
+        </div>
+      </div>
+      <div class="div_points">
+        <div class="dropdown_points">
+          <input class="text_points" id="text_points" type="number" placeholder="Écrire la note obtenu..">
+        </div>
+      </div>
+    </div>
+      <div class="dropdown_remarque">
+        <input class="text_remarque" id="text_remarque" type="text" placeholder="Écrire une remarque..">
+    </div>
+    <div class="table_critere" id="table_critere"></div>
+    <div class="div_button">
+      <button class="button_valider" onclick="updateEvalUser()">VALIDER</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

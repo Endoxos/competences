@@ -230,8 +230,9 @@ async function updateEvalUser() {
     }
   })
   if (data.ok) {
-    const response = await data.json();
-    console.log(response);
+    // const response = await data.json();
+    // console.log(response);
+    sendMail();
     window.alert("Évaluation assignée avec succès!");
     window.location = "/afficher_evaluation/afficher_evaluation.html";
   }
@@ -240,15 +241,18 @@ async function updateEvalUser() {
   }
 }
 
+function sendMail() {
+  var email = document.querySelector(".text_domaine").value;
+  var titre = document.querySelector(".text_bloc").value;
+  var points = document.getElementById('text_points').value;
+  var remarque = document.getElementById('text_remarque').value;
 
+  var xhr_mail = new XMLHttpRequest();
+  xhr_mail.open("POST", "mail.php");
+  xhr_mail.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
-
-
-
-
-
-
-
+  xhr_mail.send("email=" + email + "&titre=" + titre + "&points=" + points + "&remarque=" + remarque);
+}
 
 function showBloc(value) {
   document.querySelector(".text_bloc").value = value;

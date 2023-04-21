@@ -2,7 +2,7 @@ document.onload = testToken();
 
 function testToken() {
   if (document.cookie.indexOf("token") == -1) {
-    window.location = "http://127.0.0.1:5502/accueil/accueil.html";
+    window.location = "/accueil.html";
   }
   else {
     getBloc();

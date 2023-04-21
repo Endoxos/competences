@@ -43,11 +43,11 @@ async function identification() {
             div_button.replaceChildren(button_replace);
 
             const buttonReferentiel = document.createElement('button');
-            buttonReferentiel.setAttribute("onclick", "location.href='/accueil/referentiel/referentiel.html'");
+            buttonReferentiel.setAttribute("onclick", "location.href='/referentiel/referentiel.html'");
             buttonReferentiel.append("VOIR LE RÉFÉRENTIEL");
 
             const buttonGererEvaluation = document.createElement('button');
-            buttonGererEvaluation.setAttribute("onclick", "location.href='/accueil/afficher_evaluation/afficher_evaluation.html'");
+            buttonGererEvaluation.setAttribute("onclick", "location.href='/afficher_evaluation/afficher_evaluation.html'");
             buttonGererEvaluation.append("GÉRER LES ÉVALUATIONS");
 
             div_button.append(buttonReferentiel, buttonGererEvaluation);
@@ -64,11 +64,11 @@ async function identification() {
             div_button.replaceChildren(button_replace);
 
             const buttonReferentiel = document.createElement('button');
-            buttonReferentiel.setAttribute("onclick", "location.href='/accueil/referentiel/referentiel.html'");
+            buttonReferentiel.setAttribute("onclick", "location.href='/referentiel/referentiel.html'");
             buttonReferentiel.append("VOIR LE RÉFÉRENTIEL");
 
             const buttonVoirEvaluation = document.createElement('button');
-            buttonVoirEvaluation.setAttribute("onclick", "location.href='/accueil/voir_evaluation/voir_evaluation.html'");
+            buttonVoirEvaluation.setAttribute("onclick", "location.href='/voir_evaluation/voir_evaluation.html'");
             buttonVoirEvaluation.append("VOIR LES RÉSULTATS D'ÉVALUATIONS");
 
             div_button.append(buttonReferentiel, buttonVoirEvaluation);
@@ -110,11 +110,11 @@ async function reidentification() {
             div_button.replaceChildren(button_replace);
 
             const buttonReferentiel = document.createElement('button');
-            buttonReferentiel.setAttribute("onclick", "location.href='/accueil/referentiel/referentiel.html'");
+            buttonReferentiel.setAttribute("onclick", "location.href='/referentiel/referentiel.html'");
             buttonReferentiel.append("VOIR LE RÉFÉRENTIEL");
 
             const buttonGererEvaluation = document.createElement('button');
-            buttonGererEvaluation.setAttribute("onclick", "location.href='/accueil/afficher_evaluation/afficher_evaluation.html'");
+            buttonGererEvaluation.setAttribute("onclick", "location.href='/afficher_evaluation/afficher_evaluation.html'");
             buttonGererEvaluation.append("GÉRER LES ÉVALUATIONS");
 
             div_button.append(buttonReferentiel, buttonGererEvaluation);
@@ -131,11 +131,11 @@ async function reidentification() {
             div_button.replaceChildren(button_replace);
 
             const buttonReferentiel = document.createElement('button');
-            buttonReferentiel.setAttribute("onclick", "location.href='/accueil/referentiel/referentiel.html'");
+            buttonReferentiel.setAttribute("onclick", "location.href='/referentiel/referentiel.html'");
             buttonReferentiel.append("VOIR LE RÉFÉRENTIEL");
 
             const buttonVoirEvaluation = document.createElement('button');
-            buttonVoirEvaluation.setAttribute("onclick", "location.href='/accueil/voir_evaluation/voir_evaluation.html'");
+            buttonVoirEvaluation.setAttribute("onclick", "location.href='/voir_evaluation/voir_evaluation.html'");
             buttonVoirEvaluation.append("VOIR LES RÉSULTATS D'ÉVALUATIONS");
 
             div_button.append(buttonReferentiel, buttonVoirEvaluation);
@@ -207,7 +207,7 @@ function erreur() {
 function eraseToken() {
     document.cookie = 'token=; expires=Thu, 01 Jan 1970 00:00:00 UTC';
     document.cookie = 'user=; expires=Thu, 01 Jan 1970 00:00:00 UTC';
-    window.location = "http://127.0.0.1:5502/accueil/accueil.html";
+    window.location = "/accueil.html";
 }
 
 

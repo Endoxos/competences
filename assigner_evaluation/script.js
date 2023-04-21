@@ -2,7 +2,7 @@ document.onload = testToken();
 
 function testToken() {
   if (document.cookie.indexOf("token") == -1) {
-    window.location = "http://127.0.0.1:5502/accueil/accueil.html";
+    window.location = "/accueil.html";
   }
   else {
     getEvaluation();
@@ -233,7 +233,7 @@ async function updateEvalUser() {
     const response = await data.json();
     console.log(response);
     window.alert("Évaluation assignée avec succès!");
-    window.location = "http://127.0.0.1:5502/accueil/afficher_evaluation/afficher_evaluation.html";
+    window.location = "/afficher_evaluation/afficher_evaluation.html";
   }
   else {
     console.log("ERREUR");

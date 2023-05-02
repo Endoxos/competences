@@ -2,7 +2,7 @@ document.onload = testToken();
 
 function testToken() {
     if (document.cookie.indexOf("token") == -1) {
-        window.location = "/accueil.html";
+        window.location = "/index.html";
     }
     else {
         getCompetence();
